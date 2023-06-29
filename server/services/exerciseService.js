@@ -3,7 +3,7 @@ import Exercise from '../models/exerciseModel.js'
 
 class ExerciseService {
     async createExercise(exerciseData) {
-        const { name, primaryMuscles, secondaryMuscles, equipment, img } = exerciseData
+        const { name, primaryMuscles, secondaryMuscles, equipment, img, type } = exerciseData
 
         const exerciseCheck = await Exercise.findOne({ name })
 
@@ -11,7 +11,7 @@ class ExerciseService {
             throw ApiError.BadRequest('Exercise with this name already exists')
         }
 
-        const exercise = await Exercise.create({ name, primaryMuscles, secondaryMuscles, equipment, img })
+        const exercise = await Exercise.create({ name, primaryMuscles, secondaryMuscles, equipment, img, type })
 
         return exercise
     }

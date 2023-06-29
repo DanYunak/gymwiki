@@ -9,13 +9,13 @@ class ProductService {
     }
 
     async createProduct(productData) {
-        const { name, category, price, weight, description, img } = productData
+        const { name, category, price, description, img } = productData
 
-        if (!name || !category || !price || !weight || !img) {
+        if (!name || !category || !price || !img) {
             throw ApiError.BadRequest('Invalid value')
         }
 
-        const product = await Product.create({ name, category, price, weight, description, img })
+        const product = await Product.create({ name, category, price, description, img })
 
         return product
     }

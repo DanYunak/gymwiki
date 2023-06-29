@@ -1,0 +1,1 @@
+export { Exercises } from './components/Exercises'

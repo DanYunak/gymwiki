@@ -1,10 +1,14 @@
 import { Schema, model } from 'mongoose'
 
-export const musclesEnum = ['Adductors', 'Biceps', 'Calves', 'Chest', 'Forearms', 'Glutes', 'Hamstrings', 'Lats', 'Lower Back', 'Quadriceps', 'Shoulders', 'Traps', 'Triceps', 'Upper Back']
-export const equipmentEnum = ['Barbell', 'Dumbbell', 'Kettlebell', 'Machine', 'Plate']
+export const musclesEnum = ['Biceps', 'Calves', 'Chest', 'Forearms', 'Glutes', 'Hamstrings', 'Lats', 'Lower Back', 'Quadriceps', 'Shoulders', 'Traps', 'Triceps', 'Upper Back']
+export const equipmentEnum = ['None', 'Barbell', 'Dumbbell', 'Kettlebell', 'Machine', 'Plate']
 
 const ExerciseSchema = new Schema({
-    name: { type: String, unique: true, required: true },
+    name: {
+        type: String,
+        unique: true,
+        required: true
+    },
     primaryMuscles: {
         type: [String],
         enum: musclesEnum,
@@ -19,7 +23,13 @@ const ExerciseSchema = new Schema({
         enum: equipmentEnum,
         required: true
     },
-    img: { type: String }
+    img: {
+        type: String,
+        required: true
+    },
+    type: {
+        type: String
+    }
 })
 
 export default model('Exercise', ExerciseSchema)

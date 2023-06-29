@@ -1,0 +1,1 @@
+export { SortExercisesMuscle } from './components/SortExercisesMuscle'

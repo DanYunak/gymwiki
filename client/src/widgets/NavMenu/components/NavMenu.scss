@@ -1,0 +1,37 @@
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    font-size: 19px;
+    width: 100%;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 50px;
+
+        @media (min-width: 992px) {
+            background-image:
+                linear-gradient(transparent 0%,
+                    transparent 90%,
+                    #fff 90%,
+                    #fff 100%);
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            background-position-x: right;
+            transition: background-size .7s;
+
+            &:hover {
+                background-size: 100% 100%;
+                background-position-x: left;
+            }
+        }
+    }
+
+    &__auth {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+}

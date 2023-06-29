@@ -1,0 +1,41 @@
+.exercises {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+    color: white;
+    margin-top: 100px;
+    position: relative; 
+  }
+  
+  .sort__exercises {
+    display: flex;
+    flex-direction: column;
+    &_equipment {
+      margin-top: 30px;
+    }
+  }
+  
+  .exercises__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(-25%);
+    margin-bottom: 50px;
+  }
+  
+  .create__exercise {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .load__more_exercises {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }

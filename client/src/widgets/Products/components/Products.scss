@@ -1,0 +1,12 @@
+.products {
+    display: flex;
+    position: relative; 
+    margin-top: 100px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    &__list {
+        display: flex;
+        flex-direction: row;
+    }
+}

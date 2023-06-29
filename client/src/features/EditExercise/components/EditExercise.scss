@@ -1,0 +1,33 @@
+.edit__exercise_window {
+    position: fixed;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+        margin-right: 15px;
+    }
+
+    .name,
+    .primary__muscles,
+    .secondary__muscles,
+    .equipment,
+    .image {
+        margin-top: 40px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .btn__actions {
+        text-align: center;
+        margin-top: 50px;
+    }
+}

@@ -13,7 +13,7 @@ const CartSchema = new Schema({
 CartSchema.methods.decreaseQuantity = function(productId) {
     const productIndex = this.products.findIndex(item => item.productId.toString() === productId)
     if (productIndex !== -1) {
-        if (this.products[productIndex].quantity >1) {
+        if (this.products[productIndex].quantity > 1) {
             this.products[productIndex].quantity -= 1
         } else {
             this.products.splice(productIndex, 1)
