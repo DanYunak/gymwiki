@@ -91,7 +91,7 @@ export const Product: FC<PropsType> = ({ product, handleOpenCartWindow, isProduc
             </div>
             {window.innerWidth >= 768
                 ? <>
-                    {isHovered && isLoggedIn &&
+                    {isHovered &&
                         <div className='wish__item'>
                             {isProductInWishList || isActiveWish
                                 ? <FavoriteIcon onClick={handleRemoveFromWishList} style={{ color: 'orange' }} />
