@@ -21,9 +21,9 @@ export const ProductCategory: FC<PropsType> = ({ category, changeCurrentPage }) 
 
     return (
         <div className='product__category' onClick={getProductsByCategory}>
-            <div className='product__category_img'>
+            {/* <div className='product__category_img'>
                 <img src={category.img} alt='category img' />
-            </div>
+            </div> */}
             <div className='product__category_name'>{category.name}</div>
         </div>
     )

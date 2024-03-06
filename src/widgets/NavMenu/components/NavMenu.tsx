@@ -58,10 +58,10 @@ export const NavMenu: FC = () => {
 
     return (
         <nav className='nav'>
-            <div className='links'>
+            {/* <div className='links'>
                 <NavLink className='nav__link' to='/exercises'>Exercises</NavLink>
                 <NavLink className='nav__link' to='/'>Store</NavLink>
-            </div>
+            </div> */}
             {isLoggedIn &&
                 <div className='username'>
                     {getUsernameWithoutDomain(username)}

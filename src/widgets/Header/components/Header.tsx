@@ -1,6 +1,5 @@
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter'
 import { FC } from 'react'
-import { NavLink } from 'react-router-dom'
 import { NavMenu } from '../../NavMenu/components/NavMenu'
 import './Header.scss'
 

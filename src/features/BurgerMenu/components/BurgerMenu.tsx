@@ -78,7 +78,7 @@ export const BurgerMenu: FC<PropsType> = ({ closeMenu, handleLoginWindow }) => {
                 }
             </div>
             <div className='store__actions'>
-                <NavLink className='nav__link nav__link_store' to='/' onClick={closeMenu}>Store</NavLink>
+                {/* <NavLink className='nav__link nav__link_store' to='/' onClick={closeMenu}>Store</NavLink> */}
                 <div className='btn__actions'>
                     <Button variant='contained' size='large' onClick={openCart}>
                         <ShoppingCartIcon />
@@ -94,9 +94,9 @@ export const BurgerMenu: FC<PropsType> = ({ closeMenu, handleLoginWindow }) => {
                     </Button>
                 </div>
             </div>
-            <div className='exercises__actions'>
+            {/* <div className='exercises__actions'>
                 <NavLink className='nav__link' to='/exercises' onClick={closeMenu}>Exercises</NavLink>
-            </div>
+            </div> */}
         </div>
     )
 }

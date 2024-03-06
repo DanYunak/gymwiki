@@ -50,7 +50,7 @@ export const App = () => {
         {isRegistrationWindowOpen && <RegistrationWindow onSubmit={onSubmitRegistration} />}
         <Header />
         <Routes>
-          <Route path='/exercises' element={<ExercisesPage />} />
+          {/* <Route path='/exercises' element={<ExercisesPage />} /> */}
           <Route path='/' element={<ProductsPage />} />
         </Routes>
       </div>
